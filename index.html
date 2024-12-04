@@ -1,99 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="#" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
     <title>Admin Page</title>
-</head>
-<body>
+  </head>
 
-    <!-- List Elements and Fonts for the Sidebar -->
-
-    <nav class="sidebar">
-        <div class="listItems">
-            <ul>
-                <li class="icons">
-                    <img src="./icons/view-dashboard.svg" alt="view-dashboard">
-                    <h3 class="iconFonts">Dashboard</h3>
-                </li>
-                <li class="icons">
-                    <img src="./icons/home.svg" alt="Home">
-                    <h3 class="iconFonts">Home</h3>
-                </li>
-                <li class="icons">
-                    <img src="./icons/card-account-details-outline.svg" alt="Profile">
-                    <h3 class="iconFonts">Profile</h3>
-                </li>
-                <li class="icons">
-                    <img src="./icons/message-reply.svg" alt="Messages">
-                    <h3 class="iconFonts">Messagges</h3>
-                </li>
-                <li class="icons">
-                    <img src="./icons/clock-time-three.svg" alt="History">
-                    <h3 class="iconFonts">History</h3>
-                </li>
-                <li class="icons">
-                    <img src="./icons/file-multiple.svg" alt="Tasks">
-                    <h3 class="iconFonts">Tasks</h3>
-                </li>
-                <li class="icons">
-                    <img src="./icons/account-group-outline.svg" alt="Communities">
-                    <h3 class="iconFonts">Communities</h3>
-                </li>
-                <li class="icons">
-                    <img src="./icons/cog.svg" alt="Settings">
-                    <h3 class="iconFonts">Settings</h3>
-                </li>
-                <li class="icons">
-                    <img src="./icons/help-box.svg" alt="Support">
-                    <h3 class="iconFonts">Support</h3>
-                </li>
-                <li class="icons">
-                    <img src="./icons/shield-check.svg" alt="Privacy">
-                    <h3 class="iconFonts">Privacy</h3>
-                </li>
-            </ul>
-        </div>
+  <body>
+    <!-- Sidebar with Navigation -->
+    <nav class="sidebar" role="navigation">
+      <ul class="listItems">
+        <li class="icons">
+          <img src="./icons/view-dashboard.svg" alt="Dashboard icon" />
+          <a href="#" class="iconText">Dashboard</a>
+        </li>
+        <li class="icons">
+          <img src="./icons/home.svg" alt="Home icon" />
+          <a href="#" class="iconText">Home</a>
+        </li>
+        <li class="icons">
+          <img
+            src="./icons/card-account-details-outline.svg"
+            alt="Profile icon"
+          />
+          <a href="#" class="iconText">Profile</a>
+        </li>
+        <li class="icons">
+          <img src="./icons/message-reply.svg" alt="Messages icon" />
+          <a href="#" class="iconText">Messages</a>
+        </li>
+        <li class="icons">
+          <img src="./icons/clock-time-three.svg" alt="History icon" />
+          <a href="#" class="iconText">History</a>
+        </li>
+        <li class="icons">
+          <img src="./icons/file-multiple.svg" alt="Tasks icon" />
+          <a href="#" class="iconText">Tasks</a>
+        </li>
+        <li class="icons">
+          <img src="./icons/account-group-outline.svg" alt="Communities icon" />
+          <a href="#" class="iconText">Communities</a>
+        </li>
+        <li class="icons">
+          <img src="./icons/cog.svg" alt="Settings icon" />
+          <a href="#" class="iconText">Settings</a>
+        </li>
+        <li class="icons">
+          <img src="./icons/help-box.svg" alt="Support icon" />
+          <a href="#" class="iconText">Support</a>
+        </li>
+        <li class="icons">
+          <img src="./icons/shield-check.svg" alt="Privacy icon" />
+          <a href="#" class="iconText">Privacy</a>
+        </li>
+      </ul>
     </nav>
 
-    <!-- Elements and Fonts for the Header -->
-     <nav class="header">
-        <div class="headerTop">
-          <div class="magnify">
-            <img src="./icons/magnify.svg" alt="magnifying glass">
-          </div>  
-          <div class="searchBar">
-            <input type="text" name="searchBar" id="searchBar">
-          </div>
-          <div class="adminLogo">
-            <img src="https://github.com/DenisMichalski.png" alt="Admin Picture">
-          </div>
-          <div class="adminName">
-            <h3>Denis Michalski</h3>
+    <!-- Header Section -->
+    <header class="header" role="banner">
+      <div class="headerTop">
+        <div class="magnify">
+          <img src="./icons/magnify.svg" alt="Search icon" />
+        </div>
+        <div class="searchBar">
+          <input
+            type="text"
+            name="searchBar"
+            id="searchBar"
+            placeholder="Search..."
+          />
+        </div>
+        <div class="adminProfile">
+          <img
+            src="https://github.com/DenisMichalski.png"
+            alt="Admin Profile Picture"
+            class="adminLogo"
+          />
+          <h3 class="adminName">Denis Michalski</h3>
+        </div>
+      </div>
+      <div class="headerBottom">
+        <div class="greeting">
+          <img
+            src="https://github.com/DenisMichalski.png"
+            alt="Admin Profile Picture"
+            class="adminLogo"
+          />
+          <div class="greetingText">
+            <h5>Hi there,</h5>
+            <h3>Denis Michalski (@denis)</h3>
           </div>
         </div>
-        <div class="headerBottom">
-            <div class="adminLogo">
-                <img src="https://github.com/DenisMichalski.png" alt="Admin Picture">
-            </div>
-            <div class="greetingtext">
-                <h5>Hi there,</h5>
-            </div>
-            <div class="adminName">
-                <h3>Denis Michalski (@denis)</h3>
-            </div>
-            <div class="btn">
-                <button>New</button>
-                <button>Upload</button>
-                <button>Share</button>
-            </div>
+        <div class="actionButtons">
+          <button>New</button>
+          <button>Upload</button>
+          <button>Share</button>
         </div>
-     </nav>
+      </div>
+    </header>
 
-     <!-- Main Content -->
-      
-</body>
+    <!-- Main Content Section -->
+    <main class="projectSection" role="main">
+      <section class="projects">
+        <header class="headline">
+          <h3>Your Projects</h3>
+        </header>
+        <div class="cards">
+          <!-- Card 1-->
+          <article class="card">
+            <header class="card-title">
+              <h5>Super Cool Project</h5>
+            </header>
+            <p class="card-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Doloribus nihil repellat voluptas, eligendi aspernatur nobis quia,
+              non facere neque blanditiis sit soluta provident dolore impedit
+              commodi? Omnis delectus quisquam et!
+            </p>
+            <footer class="cardIcons">
+              <img src="./icons/star-plus-outline.svg" alt="Add to favorites" />
+              <img
+                src="./icons/eye-arrow-left-outline.svg"
+                alt="View details"
+              />
+              <img src="./icons/source-fork.svg" alt="Fork project" />
+            </footer>
+          </article>
+          <!-- Card 2-->
+          <article class="card">
+            <header class="card-title">
+              <h5>Less Cool project</h5>
+            </header>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed velit
+              nulla dignissimos quos sunt, distinctio quam laboriosam quia animi
+              nisi tenetur mollitia quasi, fugiat consequuntur iusto libero eius
+              ut. Enim?
+            </p>
+            <footer class="cardIcons">
+              <img src="./icons/star-plus-outline.svg" alt="Add to favorites" />
+              <img
+                src="./icons/eye-arrow-left-outline.svg"
+                alt="View details"
+              />
+              <img src="./icons/source-fork.svg" alt="Fork project" />
+            </footer>
+          </article>
+          <!-- Card 3-->
+          <article class="card">
+            <header class="card-title">
+              <h5>Impossible App</h5>
+            </header>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              molestias iure cumque accusantium dolorem maiores? Omnis explicabo
+              error in dignissimos. Debitis exercitationem porro culpa optio
+              tempore ab quam veniam aut.
+            </p>
+            <footer class="cardIcons">
+              <img src="./icons/star-plus-outline.svg" alt="Add to favorites" />
+              <img
+                src="./icons/eye-arrow-left-outline.svg"
+                alt="View details"
+              />
+              <img src="./icons/source-fork.svg" alt="Fork project" />
+            </footer>
+          </article>
+          <!-- Card 4 -->
+          <article class="card">
+            <header class="card-title">
+              <h5>Easy Peasy App</h5>
+            </header>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam vel
+              obcaecati, natus, sequi aut saepe dignissimos voluptatibus, id
+              officiis eius tempore velit aliquam consequatur cum facere
+              recusandae odio amet rerum!
+            </p>
+            <footer class="cardIcons">
+              <img src="./icons/star-plus-outline.svg" alt="Add to favorites" />
+              <img
+                src="./icons/eye-arrow-left-outline.svg"
+                alt="View details"
+              />
+              <img src="./icons/source-fork.svg" alt="Fork project" />
+            </footer>
+          </article>
+          <!-- Card 5 -->
+          <article class="card">
+            <header class="card-title">
+              <h5>IAd Blocker</h5>
+            </header>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod iure
+              voluptatum doloremque excepturi. Minima illum totam a beatae
+              commodi veritatis reiciendis voluptatum sit, vitae pariatur eum
+              sapiente error labore magnam?
+            </p>
+            <footer class="cardIcons">
+              <img src="./icons/star-plus-outline.svg" alt="Add to favorites" />
+              <img
+                src="./icons/eye-arrow-left-outline.svg"
+                alt="View details"
+              />
+              <img src="./icons/source-fork.svg" alt="Fork project" />
+            </footer>
+          </article>
+          <!-- Card 6 -->
+          <article class="card">
+            <header class="card-title">
+              <h5>Money Maker</h5>
+            </header>
+            <p class="card-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem modi
+              natus dolorum minus, vero quaerat amet distinctio ea, illum quis
+              alias veritatis, explicabo doloremque tempora aspernatur quidem.
+              Optio, impedit adipisci.
+            </p>
+            <footer class="cardIcons">
+              <img src="./icons/star-plus-outline.svg" alt="Add to favorites" />
+              <img
+                src="./icons/eye-arrow-left-outline.svg"
+                alt="View details"
+              />
+              <img src="./icons/source-fork.svg" alt="Fork project" />
+            </footer>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
